@@ -1,7 +1,4 @@
-  
-
-
-
+// Define variables
 $(document).ready(function () {
 	var text9 = $("#9AM");
 	var text10 = $("#10AM");
@@ -14,14 +11,13 @@ $(document).ready(function () {
 	var text17= $("#5PM");
 
 
-
-	// create variable to log current hour
+// Define variable to log current hour
 	var currentHour = moment().hour();
 	console.log(currentHour);
 	// Display current day/time
 	$("#currentDay").text(moment().format("LLLL"));
 
-
+// Using for loop to check if the task is in the past, present or future
 for ( var i = 9; i < 18; i++ ) 
 
 { 
